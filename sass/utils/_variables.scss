@@ -1,0 +1,31 @@
+
+    /*text colors*/
+:root {
+        --primary-text-color: #757575;
+        --title-text-color: #212121;
+        --accent-color: #2196f3;
+        --primery-white-color: #ffffff;
+        --primery-black-color: #000000;
+        --second-grey-color: #f5f4fa;
+        --footer-bg-color: #2f303a;
+        --contacts-ft-color: rgba(255, 255, 255, 0.6);
+        --social-links-ft-bg-colors: rgba(255, 255, 255, 0.1);
+        --button-hero-hover-color: #188ce8;
+        --header-border-bottom-color: #ececec;
+        --portfolio-project-border: #eeeeee;
+        --clients-primary-color: #afb1b8;
+        --work-text-bg-color: rgba(47, 48, 58, 0.8);
+        --portfolio-overlay-text-bg-color: rgba(33, 150, 243, 0.9);
+        --modal-window-bg-color: rgba(0, 0, 0, 0.2);
+        --modal-window-close-border-color: rgba(0, 0, 0, 0.1);
+        --anim-fast: 300ms ease-in-out;
+        --anim-slow: 600ms ease-out;
+    }
+
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .no-scroll {
+        overflow: hidden;
+    }
