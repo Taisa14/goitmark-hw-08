@@ -5,33 +5,16 @@
   |============================
 */
 .nav {
-    display: none;
-    // margin-right: auto;
+   display: none;
 
 }
 .nav__list {
+    display: none;
     
     // display: flex;
     // gap: 50px;
-
-    // breakpoint 480px for mobile screen
-        @media screen and (min-width: 480px) {
-            max-width: 480px;
-            display: none;
-        }
-    
-        // breakpoint 768px for tablet screen
-        @media screen and (min-width: 768px) {
-            max-width: 768px;
-        }
-    
-        // breakpoint 1200px for desktop screen
-        @media screen and (min-width: 1200px) {
-            max-width: 1200px;
-        }
-    
+   
 }
-
 
 
 

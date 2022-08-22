@@ -1,28 +1,34 @@
 
-
-.container-header {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
+.container {
     
-
-   
-
     
+        @media screen and (min-width: 480px) {
+            max-width: 480px;
+        }
+    
+    
+               
 }
 
 
 
+.header__container {
+    display:flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+
+}
+
 .header {
-    
-   
+
     color: #212121;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     border-bottom: 1px solid #ECECEC;
+    padding: 16px; 
 
     &__web {
             font-family: Raleway, sans-serif;
@@ -34,7 +40,7 @@
             margin-top: 20px;
         }
     
-        &__studio {
+    &__studio {
             font-family: Raleway, sans-serif;
             font-weight: 700;
             font-size: 26px;
@@ -43,16 +49,21 @@
         }
                 
 }
+
 .header-contacts__list {
     display: flex;
     margin-left: auto;
-}
+    @media screen and (min-width: 767px) {
+            display:none;
+        
+        }
+        }
+
 
 .flex__nav {
     display: flex;
      align-items: center;
     gap: 50px;
-   
 }
 
  .header-email__link {
@@ -73,29 +84,6 @@
 }
 
  }
-
-
-.header-phone__link {
-
-    color: #757575;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-            color: #2196f3;
-            fill: currentColor;
-        }
-
-    @media screen and (max-width: 767px) {
-                display: none;
-    
-              
-           }
-}
 
 
 
