@@ -10,10 +10,12 @@
 }
 .nav__list {
     display: none;
+
+    @media screen and (min-width: 768px) {
+            display: flex;
+            gap: 40px;
+        }
     
-    // display: flex;
-    // gap: 50px;
-   
 }
 
 
@@ -41,9 +43,18 @@
 
 
 .flex__nav {
+    @media screen and (min-width: 768px) {
+            margin-left: auto;
+            margin-top:20px;
+        }
+
+@media screen and (min-width: 1200px) {
     display: flex;
-    align-items: center;
-    gap: 50px;
+        align-items: center;
+        gap: 30px; ;
+    }
+    
+
 }
 
 

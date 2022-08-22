@@ -2,18 +2,27 @@
 .container {
     background-color: #ffffff;
     
-        @media screen and (min-width: 480px) {
-            max-width: 480px;
-        }
+       
                
 }
 
 .header__container {
-    width: 480px;
-    height: 60px;
-    display:flex;
-    
-    margin: 0 auto;
+    @media screen and (min-width: 480px) {
+        width: 480px;
+            height: 60px;
+            display: flex;
+            margin: 0 auto;
+        
+        }
+         @media screen and (min-width: 768px) {
+            width: 768px;
+            height: 80px;
+         }
+
+                  @media screen and (min-width: 1200px){
+                width: 1600px;
+                    height: 80px;
+                  }
 
 }
 
@@ -35,6 +44,7 @@
             color: #2196f3;
             margin-right: 93px;
             margin-top: 20px;
+            margin-left: auto;
         }
     
     &__studio {
@@ -44,6 +54,7 @@
             line-height: 1.19;
             color: var(--primery-black-color);
         }
+
                 
 }
 .header-contacts__list {
