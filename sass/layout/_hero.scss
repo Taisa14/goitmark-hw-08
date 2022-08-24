@@ -15,9 +15,13 @@
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(../images/fon.jpg);
+        url(../images/imgfon@2x.jpg);
     ;
-
+    @media screen and (min-width: 1200px) {
+            padding-top: 200px;
+            padding-bottom: 200px;
+    
+        }
 
 
  &__title {
@@ -29,6 +33,9 @@
     color: var(--primery-white-color);
     text-transform: uppercase;
     margin-bottom: 30px;
+        @media screen and (min-width: 1200px) {
+                font-size: 44px;
+                line-height: 1.37;
 }
 
  &__button {
@@ -48,4 +55,5 @@
     border: none;
     cursor: pointer;
 }
+ }
 }

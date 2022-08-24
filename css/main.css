@@ -81,6 +81,12 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 /**
@@ -404,9 +410,15 @@ img {
   font-size: 26px;
   line-height: 1.19;
   color: #2196f3;
-  margin-right: 93px;
+  margin-right: 88px;
   margin-top: 20px;
-  margin-left: auto;
+  margin-left: 15px;
+}
+@media screen and (min-width: 1200px) {
+  .header__web {
+    margin-left: 215px;
+    margin-right: 92px;
+  }
 }
 .header__studio {
   font-family: Raleway, sans-serif;
@@ -540,6 +552,7 @@ img {
         -ms-flex-align: center;
             align-items: center;
     gap: 30px;
+    margin-top: 0px;
   }
 }
 
@@ -574,8 +587,14 @@ img {
   margin-right: auto;
   padding: 200px 0;
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/fon.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/imgfon@2x.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/imgfon@2x.jpg);
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 .hero__title {
   font-weight: 900;
@@ -587,7 +606,13 @@ img {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
-.hero__button {
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.37;
+  }
+}
+.hero__title__button {
   max-width: 250px;
   min-width: 200px;
   min-height: 50px;
