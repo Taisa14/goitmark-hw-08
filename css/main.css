@@ -417,7 +417,7 @@ img {
 @media screen and (min-width: 1200px) {
   .header__web {
     margin-left: 215px;
-    margin-right: 92px;
+    margin-right: 93px;
   }
 }
 .header__studio {
@@ -653,7 +653,8 @@ img {
   gap: 30px;
 }
 .benefits__item {
-  width: 270px;
+  min-width: 450px;
+  min-height: 226px;
 }
 
 .benefits__wrap {
@@ -681,6 +682,18 @@ img {
   text-transform: uppercase;
   color: var(--title-text-color);
   margin-bottom: 10px;
+  margin-top: 30px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .benefits__title {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__title {
+    text-align: left;
+  }
 }
 
 .benefits__text {
